@@ -9,6 +9,12 @@
 # production
 /build
 
+# json packages
+*.json
+
+# IDE specific
+.vscode/
+
 # misc
 .DS_Store
 .env.local
