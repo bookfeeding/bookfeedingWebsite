@@ -3,7 +3,8 @@ import React from 'react';
 
 import DrawerToggleButton from './DrawerToggleButton';
 import './Navigation.css';
-import DropDown from './DropDown';
+import DropDown from './DropDown'
+
 
 
 const navigation = props => (
@@ -17,7 +18,8 @@ const navigation = props => (
       </div>
       <div className="spacer"/>
       <div className="toolbar_navigation-items">
-          <DropDown click={props.dropDownButton} />
+      <div className="dropbtn">
+      </div>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/">Our Libraries</a></li>
@@ -27,7 +29,7 @@ const navigation = props => (
           <li><a href="/">Contact</a></li>
         </ul>
       </div>
-    </nav>
+      </nav>
     </header>
 
 );
