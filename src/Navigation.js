@@ -21,7 +21,7 @@ const navigation = props => (
       <div className="dropbtn">
       </div>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="http://bookfeeding.org/">Home</a></li>
           <li><a href="/">Our Libraries</a></li>
           <li><a href="/">Who We Are</a></li>
           <li><a href="/">Get Involved</a></li>
