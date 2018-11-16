@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './DropDown.css'
 
-class DropDown extends Component {
-   render() {
-       return(
+  const dropDown = props => {
+    let dropDownButton = ['dropdown-content'];
+    if (props.show) {
+      dropDownButton = 'dropdown-content open';
+    }
+    return(
+      
+           <div className= {dropDownButton} >
+             <ul>
+              <li><a href="/">Mission Statement</a></li>
+              <li> <a href="/">History</a></li>
+              <li> <a href="/">Team</a> </li>
+              <li> <a href="/">Partners</a> </li>
+              <li> <a href="/">Financials</a> </li>
+             </ul>
+          </div>                                
+       );
+      };
 
-       // const dropDown = props => (
-        //    <button className="dropdown-button" onClick={props.click}>
-         //      <div className= "dropDown" />
-        
-            
-            <ul className="nav__submenu">
-            <li className="nav__submenu-item ">
-              <a>Our Company</a>
-            </li>
-            <li className="nav__submenu-item ">
-              <a>Our Team</a>
-            </li>
-            <li className="nav__submenu-item ">
-              <a>Our Portfolio</a>
-            </li>
-          </ul>
-        
-
-
-        
-       )
-   }
-}
-
-
-export default DropDown; 
+export default dropDown; 
 
 

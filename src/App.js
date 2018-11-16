@@ -31,8 +31,9 @@ class App extends Component {
       <div style={{height: '100%'}}>
       <Navigation drawerClickHandler={this.drawerToggleClickHandler} />
       <SideDrawer show={this.state.sideDrawerOpen} />
+      <DropDown show={this.state.sideDrawerOpen} />
       {backdrop}
-      <main style={{marginTop:'64px'}}>
+      <main style={{marginTop:'100px'}}>
         <p> Page content goes here!</p>
       </main>
 
